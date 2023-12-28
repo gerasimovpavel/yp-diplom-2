@@ -1,4 +1,4 @@
-package model
+package domain
 
 type Club struct {
 	ClubId   string `json:"clubId" db:"clubId"`

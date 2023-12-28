@@ -1,5 +1,0 @@
-package bluffonreadhead
-
-func main() {
-
-}

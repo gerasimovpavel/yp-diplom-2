@@ -1,4 +1,4 @@
-package model
+package domain
 
 var Points = map[int]int{
 	1:  25,

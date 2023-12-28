@@ -1,0 +1,16 @@
+http:
+  host: 127.0.0.1
+  port: 8000
+  read_timeout: 10000000000
+  write_timeout: 10000000000
+  max_header_megabytes: 2
+auth:
+  jwt:
+    signing_key: aroOIHFDBjdnvs'djeofuhg34[f90[so;bfdgrbo!nwf
+database:
+    url: localhost
+    port: 6513
+    user: postgres
+    password: a766657h
+    database: bluff
+

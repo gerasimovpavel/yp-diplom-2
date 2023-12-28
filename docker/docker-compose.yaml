@@ -1,0 +1,36 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: a766657h
+      PGDATA: /data/db
+    ports:
+      - 6513:5432
+    volumes:
+      - postgres-data:/data/db
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+#  mongo:
+#    image: mongo
+#    container_name: mongo-db
+#    ports:
+#      - 27017:27017
+#    restart: always
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: root
+#      MONGO_INITDB_ROOT_PASSWORD: a766657h
+#    volumes:
+#      - mongo-data:/data/db
+volumes:
+  #  mongo-data:
+  #    external: true
+  postgres-data:
+    external: true
